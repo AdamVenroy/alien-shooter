@@ -4,7 +4,6 @@ import math
 playerImg = pygame.image.load('images/player.png')
 bulletImg = pygame.image.load('images/bullet.png')
 enemyImg = pygame.image.load('images/enemy.png')
-correction = 180
 
 class Player(pygame.sprite.Sprite):
     def __init__(self):
@@ -33,13 +32,7 @@ class Bullet(pygame.sprite.Sprite):
         speed = 15
         self.rect.x = self.rect.x + (speed*math.sin(self.angle))
         self.rect.y = self.rect.y + (speed*math.cos(self.angle))
-'''
-    def delete(self):
-        self.kill()
-        self.draw = False
-        del self
 
-'''
         
 
 
